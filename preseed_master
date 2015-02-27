@@ -104,7 +104,7 @@ method{ format } \
 format{ } \
 use_filesystem{ } \
 filesystem{ xfs } \
-mountpoint{ /smartvue } \
+mountpoint{ /anything } \
 .
 d-i partman-auto-lvm/guided_size string 90%
 d-i partman-auto/choose_recipe es
@@ -115,9 +115,9 @@ d-i partman-auto/choose_recipe es
 # User Setup
 d-i passwd/root-login boolean true
 d-i passwd/make-user boolean true
-d-i passwd/user-fullname string smartvue
-d-i passwd/username string smartvue
-d-i passwd/user-password-crypted password Sm$rtvu3!S12Nvr
+d-i passwd/user-fullname string magicninja
+d-i passwd/username string magicninja
+d-i passwd/user-password-crypted password MySpec1alPassword!
 d-i passwd/user-uid string 1010
 d-i user-setup/allow-password-weak boolean false
 d-i user-setup/encrypt-home boolean false
